@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+@font-face {
+  font-family: logo;
+  src: url('./assets/jagtech.regular.ttf')format("truetype");
+}
