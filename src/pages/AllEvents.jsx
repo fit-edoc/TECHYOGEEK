@@ -36,7 +36,7 @@ const EventCard = ({ event, index }) => (
         </div>
         <div className="flex items-center  gap-4 text-sm">
           <button className="px-6 py-2 text-black bg-gradient-to-r from-purple-600 to-purple-200 rounded-md">view details</button>
-                    <button className="px-6 py-2 text-black bg-gradient-to-r from-purple-600 to-purple-200 rounded-md">apply</button>
+                   <a href={event.link}> <button className="px-6 py-2 text-black bg-gradient-to-r from-purple-600 to-purple-200 rounded-md">apply</button></a>
         </div>
       </div>
     </div>
