@@ -23,7 +23,7 @@ export default function GoogleLogin() {
         if (event === "SIGNED_IN" && session) {
           navigate("/")
                localStorage.setItem("supabaseUser", JSON.stringify(user));
-          console.log("User saved to localStorage:", user);
+        
         } else if (event === "SIGNED_OUT") {
           setUser(null);
         }

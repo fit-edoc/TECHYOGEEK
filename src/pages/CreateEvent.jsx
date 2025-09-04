@@ -15,6 +15,7 @@ export default function CreateEvent({onCreateClick}) {
     starting_time: "",
     closing_time: "",
     location: "",
+    link:"",
   });
 
 
@@ -61,6 +62,7 @@ const {user} = useSupabase()
         starting_time: formData.starting_time || null,
         closing_time: formData.closing_time || null,
         location: formData.location,
+        link: formData.link,
         is_verify: false, 
       },
     ]);
@@ -77,6 +79,7 @@ const {user} = useSupabase()
         starting_time: "",
         closing_time: "",
         location: "",
+        link:""
       });
     }
   };
@@ -140,6 +143,14 @@ const {user} = useSupabase()
           name="location"
           placeholder="Event Location"
           value={formData.location}
+          onChange={handleChange}
+          className="w-full p-2 border rounded"
+        />
+        <input
+          type="text"
+          name="link"
+          placeholder="Event apply link"
+          value={formData.link}
           onChange={handleChange}
           className="w-full p-2 border rounded"
         />
