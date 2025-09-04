@@ -13,7 +13,11 @@ const Nav = ({onCreateClick}) => {
   const navigate = useNavigate()
 const {user} = useSupabase()
 
+<<<<<<< HEAD
 console.log(user)
+=======
+
+>>>>>>> 87dec24 (new)
 
      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
